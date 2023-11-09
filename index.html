@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- bootstrap npm -->
-  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+  <!-- bootstrap css-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- favicon -->
   <link rel="shortcut icon" href="images/icons8-skate-16.png" type="image/x-icon">
@@ -30,36 +29,79 @@
 
       <div class="mb-3 name-inputs">
         <div class="form-floating mb-3 text-dark">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Primeiro nome</label>
+          <input type="text" class="form-control" id="floatingInput" placeholder="Nome" autocomplete="off">
+          <label for="floatingInput">Nome</label>
         </div>
         <div class="form-floating text-dark">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword" class="ps-3">Segundo nome</label>
+          <input type="text" class="form-control" id="floatingPassword" placeholder="Sobrenome" autocomplete="off">
+          <label for="floatingPassword" class="ps-3">Sobrenome</label>
         </div>
       </div>
+      <!-- Inputs de gênero -->
       <div class="d-flex flex-column mb-3 gap-2 my-3">
-        <span class="">2 - Qual seu gênero?</span>
+        <span class="pb-2">2 - Qual seu gênero?</span>
         <div class="form-check">
           <input type="radio" class="form-check-input" name="gender" id="masc">
           <label for="masc" class="form-check-label">Masculino</label>
         </div>
         <div class="form-check">
-          <input type="radio" class="form-check-input" name="gender" id="masc">
-          <label for="masc" class="form-check-label">Feminino</label>
+          <input type="radio" class="form-check-input" name="gender" id="fem">
+          <label for="fem" class="form-check-label">Feminino</label>
         </div>
         <div class="form-check">
-          <input type="radio" class="form-check-input" name="gender" id="masc">
-          <label for="masc" class="form-check-label">Prefiro não informar</label>
+          <input type="radio" class="form-check-input" name="gender" id="not-specified">
+          <label for="not-specified" class="form-check-label">Prefiro não informar</label>
         </div>
       </div>
+      <!-- input para modalidade -->
+      <div class="switch-checkbox d-flex flex-column mb-3 gap-2 my-3">
+        <span class="pb-2">3 - Quais as modalidades do skate que você anda?</span>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="street">
+          <label class="form-check-label" for="street">Street</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="park">
+          <label class="form-check-label" for="park">Park</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="longboard">
+          <label class="form-check-label" for="longboard">Longboard</label>
+        </div>
+      </div>
+      <!-- input para tempo de skate -->
+      <div class="d-flex flex-column mb-3 gap-2 my-3">
+        <span class="pb-2">4 - Quanto tempo de skate você tem?</span>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="gender" id="starter">
+          <label for="starter" class="form-check-label">Comecei a menos de um mês</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="gender" id="medium-experience">
+          <label for="medium-experience" class="form-check-label">6 meses ou - </label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="gender" id="one-year-or-less">
+          <label for="one-year-or-less" class="form-check-label">1 ano ou -</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="gender" id="five-years-or-less">
+          <label for="five-years-or-less" class="form-check-label">5 ano ou -</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="gender" id="five-years-or-more">
+          <label for="five-years-or-more" class="form-check-label">5 ano ou +</label>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-outline-primary text-aling-center send-button" type="submit">Enviar</button>
+      </div>
       
-
     </form>
-
   </div>
   
-  <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+  <!-- bootstrap js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
